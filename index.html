@@ -25,10 +25,15 @@
     border-color: green;
     border-width: 10px;
     border-style: solid;
+    border-radius: 50%;
   }
 
   .smaller-image {
     width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
   }
   </style>
 
@@ -36,8 +41,10 @@
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
-  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." 
+    class="smaller-image thick-green-border"></a>
 
+  <div class="silver-background">
   <p>Things cats love:</p>
   <ul>
     <li>cat nip</li>
@@ -50,9 +57,9 @@
     <li>thunder</li>
     <li>other cats</li>
   </ol>
-
+</div>
 <!--html forms-->
-  <form action="https://freecatphotoapp.com/submit-cat-photo">
+  <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
     
 <!--Section for Radio buttons-->
     <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
